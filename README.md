@@ -48,7 +48,7 @@ Incluye **calibración por homografía**, control de **ejes X/Y** (con override)
 ## ⌨️ Controles útiles
 
 - **Scroll**: zoom (centrado bajo el cursor).
-- **Botón derecho + arrastrar**: pan.
+- **Botón derecho + arrastrar**: arrastra la imagen.
 - **Ajustar**: auto‑fit de la imagen a la vista.
 - **1:1**: pixel‑perfect (100%).
 
@@ -66,10 +66,9 @@ Incluye **calibración por homografía**, control de **ejes X/Y** (con override)
 
 ```powershell
 # en la carpeta del proyecto
-python -m venv .venv
-.venv\\Scripts\\activate
+cd ruta/al/proyecto
 pip install -r requirements.txt
-python offside_var_like\\main.py
+python main.py
 ```
 
 **Requisitos** (ver `requirements.txt`):
@@ -99,19 +98,6 @@ python offside_var_like\\main.py
 
 ---
 
-## 🗂️ Estructura del repo
-
-```
-.
-├── offside_var_like/
-│   ├── main.py            # UI (PySide6), overlay, eventos, guías, VP_Z, export
-│   ├── offside_core.py    # homografía, ejes, proyección de líneas, veredicto
-│   └── requirements.txt   # dependencias
-└── README.md
-```
-
----
-
 ## 🚧 Roadmap (ideas próximas)
 
 - Calibración con **dos familias de paralelas** (afín) y **ajuste a escala** más robusto.
@@ -129,11 +115,6 @@ python offside_var_like\\main.py
 - marcas de referencia,
 - explicación del criterio y del impacto esperado.
 
----
-
-## ⚖️ Licencia
-
-Elegí la que prefieras (MIT/BSD/Apache‑2.0). Si no indicás ninguna, el repo queda **sin licencia explícita**.
 
 ---
 
